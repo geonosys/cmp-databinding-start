@@ -19,7 +19,7 @@ export class AppComponent {
   }
 
   onBluePrintAdded(bluePrintData: {serverName: string, serverContent: string }) {
-    console.log('bluePrint created ' + bluePrintData.serverName );
+    console.log('bluePrint created ' + bluePrintData.serverName + ' ' + bluePrintData.serverContent );
     this.serverElements.push({
       type: 'bluePrint',
       name: bluePrintData.serverName,
